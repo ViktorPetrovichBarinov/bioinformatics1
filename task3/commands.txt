@@ -1,0 +1,33 @@
+геном - https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=SRR33602302&display=download
+e.coli reference - https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000005845.2/
+
+индексируем
+bwa index GCF_000005845.2_ASM584v2_genomic.fna 
+bwa mem GCF_000005845.2_ASM584v2_genomic.fna SRR33602302.fastq.gz | gzip -3 > aln-se.sam.gz
+
+преобразование sam в bam
+samtools view -S -b aln-se.sam > aln-se.bam
+получаем статистику по выравниванию
+samtools flagstat aln-se.bam > aln-se.flagstat.txt
+
+результат:
+116232 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+917 + 0 supplementary
+0 + 0 duplicates
+115125 + 0 mapped (99.05% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+результат работы скрипта
+./script.sh aln-se.flagstat.txt 
+Mapped: 99.05%
+OK
+
+
