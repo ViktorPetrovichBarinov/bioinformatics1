@@ -1,6 +1,7 @@
-1. фреймворк плохо дружит с python3.13 лучше откатиться на 3.11
-2. https://github.com/flyteorg/flyte - ориентируемся по quick start с репы
-3. pip install flytekit
-4. touch hello.py
-5. пишем wf
-6. запуск pyflyte run hello.py hello_world_wf
+pip install apache-airflow
+airflow standalone
+открываем localhost:8080
+в логах находим логин и пароль для админа -> вводим	
+создается в home директории папка airflow
+добавляем туда dag файл и необходимые файлы, которые будут использоваться в скрипте
+

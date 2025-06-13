@@ -6,9 +6,8 @@ e.coli reference - https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000005845.2/
 5. 1 gb решил не загружать предоставил ссылки
 6. instruction.txt
 7. hello.py
-8. 
-Running Execution on local.
-Hello, World!
-10-14. task.py - попытки реализовать пайплайны на фреймворке.
-Не получилось(
-
+8. hello.log
+10. airflow.py
+12. папка logs
+13. pipeline.png
+14. В Apache Airflow используется автоматическая визуализация DAG (Directed Acyclic Graph) через веб-интерфейс. Граф строится на основе зависимостей между задачами, определённых в коде DAG.

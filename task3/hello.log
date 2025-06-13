@@ -1,0 +1,15 @@
+Log message source details: sources=["/home/palkinegor/airflow/logs/dag_id=hello_world/run_id=manual__2025-05-25T18:44:50.330519+00:00/task_id=print_hello/attempt=1.log"]
+[2025-05-26, 01:44:51] INFO - DAG bundles loaded: dags-folder, example_dags: source="airflow.dag_processing.bundles.manager.DagBundlesManager"
+[2025-05-26, 01:44:51] INFO - Filling up the DagBag from /home/palkinegor/airflow/dags/hello_world.py: source="airflow.models.dagbag.DagBag"
+[2025-05-26, 01:44:51] INFO - Tmp dir root location: /tmp: source="airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"
+[2025-05-26, 01:44:51] INFO - Running command: ['/usr/bin/bash', '-c', 'echo "Hello, Airflow! Current time: $(date)"']: source="airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"
+[2025-05-26, 01:44:51] INFO - Output:: source="airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"
+[2025-05-26, 01:44:51] INFO - Hello, Airflow! Current time: Mon May 26 01:44:51 +07 2025: source="airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"
+[2025-05-26, 01:44:51] INFO - Command exited with return code 0: source="airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"
+[2025-05-26, 01:44:51] INFO - Pushing xcom: ti="RuntimeTaskInstance(id=UUID('019708c3-0e20-7a6d-abc4-f65dd59eba81'), task_id='print_hello', dag_id='hello_world', run_id='manual__2025-05-25T18:44:50.330519+00:00', try_number=1, map_index=-1, hostname='EgorComputer.', context_carrier=None, task=<Task(BashOperator): print_hello>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 5, 25, 18, 44, 51, 466034, tzinfo=TzInfo(UTC)), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)": source="task"
+[2025-05-26, 01:44:51] INFO - Task instance is in running state: chan="stdout": source="task"
+[2025-05-26, 01:44:51] INFO -  Previous state of the Task instance: TaskInstanceState.QUEUED: chan="stdout": source="task"
+[2025-05-26, 01:44:51] INFO - Current task name:print_hello: chan="stdout": source="task"
+[2025-05-26, 01:44:51] INFO - Dag name:hello_world: chan="stdout": source="task"
+[2025-05-26, 01:44:51] INFO - Task instance in success state: chan="stdout": source="task"
+[2025-05-26, 01:44:51] INFO -  Previous state of the Task instance: TaskInstanceState.RUNNING: chan="stdout": source

@@ -1,0 +1,14 @@
+{"timestamp":"2025-06-13T22:13:16.929010","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-13T22:13:16.929500","level":"info","event":"Filling up the DagBag from /home/ruslan/airflow/dags/airflow.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-13T22:13:16.939105","level":"info","event":"Tmp dir root location: /tmp","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-06-13T22:13:16.939419","level":"info","event":"Running command: ['/usr/bin/bash', '-c', 'samtools view -S -b /home/ruslan/airflow/data/aln-se.sam > /home/ruslan/airflow/data/aln-se.bam']","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-06-13T22:13:16.967808Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-13T22:13:16.967902Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-13T22:13:16.967956Z","level":"info","event":"Current task name:sam_to_bam","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-13T22:13:16.968004Z","level":"info","event":"Dag name:alignment_analysis","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-13T22:13:16.952321","level":"info","event":"Output:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-06-13T22:13:43.245488","level":"info","event":"Command exited with return code 0","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-06-13T22:13:43.246095","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01976b55-45bc-763d-b689-f327e5d61f37'), task_id='sam_to_bam', dag_id='alignment_analysis', run_id='manual__2025-06-13T22:07:19.977379+00:00', try_number=1, map_index=-1, hostname='ruslan-MS-7D95', context_carrier=None, task=<Task(BashOperator): sam_to_bam>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 6, 13, 22, 13, 16, 238350, tzinfo=TzInfo(UTC)), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task"}
+{"timestamp":"2025-06-13T22:13:43.295718Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-13T22:13:43.295813Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-13T22:13:43.295859Z","level":"info","event":"Task operator:<Task(BashOperator): sam_to_bam>","chan":"stdout","logger":"task"}
